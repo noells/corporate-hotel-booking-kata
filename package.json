@@ -10,8 +10,7 @@
     "test-acceptance": "tsc -b tests/acceptance && NODE_ENV=acceptance mocha --reporter ${MOCHA_REPORTER:-spec} '.test_dir/tests/acceptance/**/*.js'",
     "test-acceptance-tdd": "NODE_ENV=acceptance tsc-watch -b tests/acceptance --onSuccess \"mocha --reporter ${MOCHA_REPORTER:-spec} '.test_dir/tests/acceptance/**/*.js'\"",
     "test-unit": "rm -rf .test_dir && tsc -b tests/unit && NODE_ENV=test mocha --reporter ${MOCHA_REPORTER:-spec} '.test_dir/tests/unit/**/*.js'",
-    "test-unit-tdd": "rm -rf .test_dir && NODE_ENV=test tsc-watch -b tests/unit --onSuccess \"mocha --reporter ${MOCHA_REPORTER:-spec} '.test_dir/tests/unit/**/*.js'\"",
-    "test-spec": "nyc mocha '.test_dir/tests/**/*.js'"
+    "test-unit-tdd": "rm -rf .test_dir && NODE_ENV=test tsc-watch -b tests/unit --onSuccess \"mocha --reporter ${MOCHA_REPORTER:-spec} '.test_dir/tests/unit/**/*.js'\""
   },
   "devDependencies": {
     "@types/chai": "^4.2.0",
@@ -32,11 +31,14 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
+    "@types/chai-as-promised": "^7.1.3",
     "@types/ramda": "^0.27.17",
+    "@types/uuid": "^8.3.0",
+    "chai-as-promised": "^7.1.1",
     "eslint-plugin-prettier": "^3.1.2",
-    "nyc": "^15.1.0",
     "ramda": "^0.27.1",
-    "ts-option": "^2.1.0"
+    "ts-option": "^2.1.0",
+    "uuid": "^8.3.0"
   },
   "config": {
     "commitizen": {
