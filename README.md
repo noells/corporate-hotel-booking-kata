@@ -1,6 +1,8 @@
 Corporate Hotel Booking Kata
 ====================================
  
+[![Node.js CI](https://github.com/noells/corporate-hotel-booking-kata/workflows/Node.js%20CI/badge.svg)](https://github.com/noells/corporate-hotel-booking-kata/actions)
+
 # Description
 This repo contains the Corporate Hotel Booking Kata ([click here for details](https://github.com/sandromancuso/corporate-hotel-booking-kata/blob/master/README.md)) written in TypeScript
 
