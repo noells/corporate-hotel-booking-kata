@@ -30,5 +30,5 @@ $ npm run test-acceptance
 # Current state
 The kata consists of 4 services that should work together in order to provide several use cases for different actors. Therefore, several steps could be achieved in a progressive way:
 
-- [x] The core domain => the 4 services described in the Kata README.
+- [x] The core domain => the 4 services described in the Kata README
 - [ ] A separate domain for managing the different type of actors in the system and their possible use cases.
